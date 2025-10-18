@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>B站UP主报告</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      width: 280px;
+      text-align: center;
+      padding: 15px;
+      background-color: #f7f9fa;
+      margin: 0;
+      color: #333;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #00a1d6;
+    }
+
+    .area {
+      padding-top: 10px;
+    }
+
+    .button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    #analyze-button {
+      background-color: #00a1d6;
+      color: white;
+    }
+
+    #analyze-button:hover:not(:disabled) {
+      background-color: #00b5e5;
+    }
+
+    #analyze-button:disabled {
+      background-color: #ccc;
+      color: #666;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    #download-button {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #main-action-area {
+      display: block;
+    }
+
+    #result-area {
+      display: none;
+    }
+
+    #status-message {
+      font-size: 14px;
+      min-height: 20px;
+    }
+
+    #result-message {
+      font-size: 15px;
+      font-weight: bold;
+      color: #28a745;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>B站UP主视频报告</h3>
+
+  <div id="main-action-area" class="area">
+    <p id="status-message"></p>
+    <button id="analyze-button" class="button">分析数据</button>
+  </div>
+
+  <div id="result-area" class="area">
+    <p id="result-message"></p>
+    <button id="download-button" class="button">下载CSV文件</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

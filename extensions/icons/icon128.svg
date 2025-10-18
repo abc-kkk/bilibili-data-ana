@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a1d6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00b5e5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#grad1)"/>
+
+  <!-- Inner "B" shape resembling a stylized report/chart -->
+  <g transform="translate(16, 16)">
+    <rect width="96" height="96" rx="16" fill="white" fill-opacity="0.9"/>
+    
+    <!-- Left part of "B" (like a bar chart) -->
+    <path d="M28,24 L28,72 L52,60 L52,36 L28,24 Z" fill="#00a1d6"/>
+    
+    <!-- Right part of "B" (like a line graph) -->
+    <path d="M68,24 L68,32 L56,32 L56,64 L68,64 L68,72 L50,72 L50,24 L68,24 Z" fill="#fb7299"/>
+  </g>
+</svg>
