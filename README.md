@@ -29,7 +29,7 @@ CSV格式：导出为通用的CSV表格，方便在Excel、Numbers或Python中�
 
 点击本页面右上角的 Code -> Download ZIP，下载项目并解压到你喜欢的文件夹。
 
-或者，如果你熟悉Git，可以执行 git clone https://github.com/你的用户名/你的项目名.git
+或者，如果你熟悉Git，可以执行 git clone https://github.com/abc-kkk/bilibili-data-ana.git
 
 加载插件
 
